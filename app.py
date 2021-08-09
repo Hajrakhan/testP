@@ -1,10 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-const port = Process.env.PORT || 3000
-server.listen(port,()=>{ 
-    console.log("server listening to port "+port);
-});
+
 @app.route("/")
 def index():
     
