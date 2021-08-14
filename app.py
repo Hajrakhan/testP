@@ -116,7 +116,7 @@ def Apply():
 @app.route('/about')
 def About():
     cate=categories()
-    return render_template('about.html',params=params,category=cate)
+    return render_template('About.html',params=params,category=cate)
 
 @app.route('/contact')
 def contact():
