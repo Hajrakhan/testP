@@ -1,15 +1,7 @@
-from os import close
-from flask import Flask, render_template,flash
-from flask import request,session
-import json
-from werkzeug.utils import redirect,secure_filename
-from flask_mysqldb import MySQL
-import psycopg2
-import random
+from flask import Flask
 
-app.route('/')
-def updatepost():
-    return render_template('hell.html')
+app = Flask(__name__)
 
-if __name__ == '__main__':
-   app.run()
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
