@@ -329,7 +329,7 @@ def logout():
     session.pop('user', None)
     return render_template('admin/index.html')
 
-app.route('/')
+app.route('/hiiii')
 def updatepost():
     return render_template('hell.html')
 
